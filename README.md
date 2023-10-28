@@ -1,5 +1,5 @@
 # Water Cleanup Bot
-This code is the firmware for my Water Cleanup Bot. It controls the bot's movement.
+This code is the firmware for the Water Cleanup Bot. It controls the bot's movement.
 
 Latest version: 1.0
 
