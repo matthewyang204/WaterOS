@@ -4,7 +4,7 @@ This code is the firmware for the Water Cleanup Bot. It controls the bot's movem
 Latest version: 1.0
 
 Download it here:
-https://github.com/matthewyang204/Water-Cleanup-Bot/releases/download/1.0/Water_Cleanup_Bot_1.0.ino
+https://github.com/matthewyang204/Water-Cleanup-Bot/releases/download/1.1/Water_Cleanup_Bot_1.1.ino
 
 No hardware build available yet.
 
