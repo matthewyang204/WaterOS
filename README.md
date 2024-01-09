@@ -1,4 +1,4 @@
-# Water Cleanup Bot
+# WaterOS
 This code is the firmware for the Water Cleanup Bot. It controls the bot's movement.
 
 Latest version: 1.1
