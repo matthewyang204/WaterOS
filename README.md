@@ -9,8 +9,8 @@ https://github.com/matthewyang204/WaterOS/releases/download/1.1/WaterOS_1.1.ino
 No hardware build available yet.
 
 Requirements:
-Water Cleanup Bot Build #1 or later
-Arduino IDE 2.0 or later
+Water Cleanup Bot Build #1 or later,
+Arduino IDE 2.0 or later,
 Windows 10 64-bit or later OR macOS 10.14 (Mojave) or later
 
 To install:
