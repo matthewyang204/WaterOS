@@ -1,10 +1,10 @@
 # WaterOS
 This code is the firmware for the Water Cleanup Bot. It controls the bot's movement.
 
-Latest version: 1.1
+Latest version: 1.2
 
 Download it here:
-https://github.com/matthewyang204/WaterOS/releases/download/1.1/WaterOS_1.1.ino
+https://github.com/matthewyang204/WaterOS/releases/download/1.2/WaterOS.ino
 
 No hardware build available yet.
 
