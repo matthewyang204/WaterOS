@@ -6,6 +6,9 @@ Latest version: 1.3
 Download it here:
 https://github.com/matthewyang204/WaterOS/releases/download/1.3/WaterOS.ino
 
+Version only for XBees:
+https://github.com/matthewyang204/WaterOS/releases/download/1.3/WaterOS-XBee.ino
+
 No hardware build available yet.
 
 Requirements:
