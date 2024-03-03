@@ -22,7 +22,7 @@ To install:
 3. Upload it to your bot.
 
 To use:
-1. Interact with the bot through the Serial Monitor and use the built-in software to display the video camera's output to view where it is going.
+1. Interact with the bot through the Serial Monitor and use the built-in camera software on your computer (Windows Camera or Mac Photobooth) to display the video camera's output to view where it is going.
 
 To update:
 1. Follow the installation instrutions above to flash the new version to your bot.
