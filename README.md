@@ -3,7 +3,7 @@ This code is the firmware for the Water Cleanup Bot. It controls the bot's movem
 
 Latest version: 1.3
 
-Download it here:
+Bluetooth-only version:
 https://github.com/matthewyang204/WaterOS/releases/download/1.3/WaterOS.ino
 
 Version only for XBees:
