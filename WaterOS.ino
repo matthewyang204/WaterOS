@@ -10,6 +10,7 @@ void setup() {
   digitalWrite(Reset, HIGH);
   Serial.begin(9600);
   delay(5000);
+  Serial.println("WaterOS v1.3 2024 © Matthew Yang and Joanna Azizi")
   Serial.println("Shell is ready");
 }
 
