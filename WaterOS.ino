@@ -1,6 +1,6 @@
-#define M1 11
-#define M2 12
-#define Reset 2
+const int M1=11;
+const int M2=12;
+const int Reset=2;
 int command = 0;
 int terminate = 0;
 void setup() {
@@ -10,7 +10,7 @@ void setup() {
   digitalWrite(Reset, HIGH);
   Serial.begin(9600);
   delay(5000);
-  Serial.println("WaterOS v1.3 2024 © Matthew Yang and Joanna Azizi")
+  Serial.println("WaterOS v1.3 2024 © Matthew Yang and Joanna Azizi");
   Serial.println("Shell is ready");
 }
 
