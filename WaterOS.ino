@@ -1,52 +1,61 @@
 const int M1=11;
 const int M2=12;
 const int Reset=2;
+const int indicator=13;
 int command = 0;
 int terminate = 0;
+#define shell() Serial.print("shell>")
+#define received() Serial.println(command)
+#define processing() Serial.println("Running...")
 void setup() {
+  digitalWrite(indicator, LOW);
   pinMode(M1, OUTPUT);
   pinMode(M2, OUTPUT);
   pinMode(Reset, OUTPUT);
   digitalWrite(Reset, HIGH);
   Serial.begin(9600);
   delay(5000);
+  digitalWrite(indicator, HIGH);
   Serial.println("WaterOS v1.3 2024 © Matthew Yang and Joanna Azizi");
-  Serial.println("Shell is ready");
+  Serial.println("WaterOS Shell Starting...");
+  shell();
 }
 
 void loop() {
   if (Serial.available() > 0) {
+    String command="";
     // read the incoming byte:
-    command = Serial.read();
+    delay(500);
+    while (Serial.available() > 0) {
+      char c = Serial.read();
+      command += c;
+      if (c == '\n'){
+        break;
+      }
+    }
+    received();
+    processing();
 
     //Run the command:
-    if (command == "forward"){
+    if (command.equals("forward\n")){
       digitalWrite(M1, HIGH);
       digitalWrite(M2, HIGH);
-    } if (command == "right"){
+      Serial.println("Both motors started; boat is moving forward");
+    } else if (command.equals("right\n")){
       digitalWrite(M1, HIGH);
       digitalWrite(M2, LOW);
-    } if (command == "left"){
+      Serial.println("Left motor started, right motor stopped; boat is moving right");
+    } else if (command.equals("left\n")){
       digitalWrite(M1, LOW);
       digitalWrite(M2, HIGH);
-    } if (command == "stop"){
+      Serial.println("Left motor stopped, right motor started; boat is moving left");
+    } else if (command.equals("stop\n")){
       digitalWrite(M1, LOW);
       digitalWrite(M2, LOW);
-    } if (command == "reboot"){
-      digitalWrite(Reset, LOW);
-      Serial.println("Failed to reboot");
-    } if (command == "terminate"){
-      Serial.println("Are you sure you want to terminate? (y/n)");
-      if (Serial.available() > 0) {
-        if (terminate == "y") {
-          digitalWrite(M1, LOW);
-          digitalWrite(M2, LOW);
-          exit(0);
-          Serial.println("Failed to shut down");
-        }
-      }
+      Serial.println("Both motors stopped; boat is parked");
     } else {
       Serial.println("Invalid command");
     }
+    shell();
   }
 }
