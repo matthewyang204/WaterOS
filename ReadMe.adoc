@@ -4,11 +4,8 @@ This code is the firmware for the TrashZapper water-cleaning bot. It controls th
 
 Latest version: Blue Valley 1.4
 
-Bluetooth-only version:
-https://github.com/matthewyang204/WaterOS/releases/download/1.3/WaterOS.ino
-
-Version only for XBees:
-https://github.com/matthewyang204/WaterOS/releases/download/1.3/WaterOS-XBee.ino
+Download it here:
+https://github.com/matthewyang204/WaterOS/archive/refs/tags/1.4.zip
 
 No hardware build available yet.
 
