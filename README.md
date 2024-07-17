@@ -31,4 +31,4 @@ To update:
 
 Dev Notes: https://docs.google.com/document/d/1UVt9WTEc06yVGV9E_fi3pdHlFEbdgE0F/edit?usp=sharing&ouid=106582150056120454876&rtpof=true&sd=true
 
-Copyright Matthew Yang and Joanna Azizi 2024
+Copyright matthewyang204 & 13-JA 2024
