@@ -16,7 +16,7 @@ void setup() {
   Serial.begin(9600);
   delay(5000);
   digitalWrite(indicator, HIGH);
-  Serial.println("WaterOS v1.4 2024 © Matthew Yang and Joanna Azizi");
+  Serial.println("WaterOS v1.4 2024 © @matthewyang204 & @13-JA");
   Serial.println("WaterOS Shell Starting...");
   shell();
 }
