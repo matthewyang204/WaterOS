@@ -6,7 +6,7 @@ Latest version: Blue Valley 1.4
 Download it here:
 https://github.com/matthewyang204/WaterOS/archive/refs/tags/1.4.zip
 
-No hardware build available yet.
+No hardware build is available yet.
 
 Requirements:
 Water Cleanup Bot Build #1 or later,
@@ -27,6 +27,6 @@ Here's a list of commands:
 -'right' to go right
 
 To update:
-1. Follow the installation instrutions above to flash the new version to your bot.
+1. Follow the installation instructions above to flash the new version to your bot.
 
-Copyright © Matthew Yang and Joanna Azizi 2024
+Copyright Â© @matthewyang24 and @13-JA
