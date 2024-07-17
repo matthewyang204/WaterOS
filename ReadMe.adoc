@@ -29,4 +29,4 @@ Here's a list of commands:
 To update:
 1. Follow the installation instructions above to flash the new version to your bot.
 
-Copyright © @matthewyang24 and @13-JA
+Copyright © @matthewyang24 and @13-JA  2024
