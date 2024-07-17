@@ -29,4 +29,6 @@ Here's a list of commands:
 To update:
 1. Follow the installation instrutions above to flash the new version to your bot.
 
-Copyright © Matthew Yang and Joanna Azizi 2024
+Dev Notes: https://docs.google.com/document/d/1UVt9WTEc06yVGV9E_fi3pdHlFEbdgE0F/edit?usp=sharing&ouid=106582150056120454876&rtpof=true&sd=true
+
+Copyright Matthew Yang and Joanna Azizi 2024
