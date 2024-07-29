@@ -6,14 +6,17 @@ const int M1=11;
 const int M2=12;
 const int Reset=2;
 const int indicator=13;
+const int MOSI_PIN = 7;
+const int MISO_PIN = 6;
+const int SCK_PIN = 5;
 int command = 0;
 int terminate = 0;
 #define shell() Serial.print("shell>")
 #define received() Serial.println(command)
 #define processing() Serial.println("Running...")
 
-RF24 radio(9, 10); // CE, CSN
-const byte address[6] = "00001";
+RF24 radio(9, 10, SCK_PIN, MISO_PIN, MOSI_PIN);
+const byte address[6] = "50015";
 
 void setup() {
   digitalWrite(indicator, LOW);
@@ -24,7 +27,7 @@ void setup() {
   Serial.begin(9600);
   delay(5000);
   digitalWrite(indicator, HIGH);
-  Serial.println("WaterOS v1.4 2024 © @matthewyang204 & @13-JA");
+  Serial.println("WaterOS v1.5 2024 © @matthewyang204 & @13-JA");
   Serial.println("WaterOS Shell Starting...");
   shell();
 
