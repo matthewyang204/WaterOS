@@ -1,5 +1,0 @@
-Configuration commands:
-
-AT+B9600
-AT+FU1
-AT+P20
