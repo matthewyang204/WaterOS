@@ -18,16 +18,33 @@ void setup() {
 }
 
 void loop() {
-  if (radio.available()) {
-    String receivedData = "";
-    radio.read(&receivedData, sizeof(receivedData));
-    
-    Serial.println(receivedData);
-  }
-
   if (Serial.available()) {
     String sendData = Serial.readString();
     
+    while (Serial.available()) { // wait until all data is received
+      delay(5); // delay to allow buffer to fill 
+      sendData += Serial.readString();
+    }
+    
     radio.write(&sendData, sizeof(sendData));
+  }
+
+  if (radio.available()) {
+    String receivedData = "";
+    bool messageComplete = false;
+    
+    while (!messageComplete) {
+      String temp = "";
+      radio.read(&temp, sizeof(temp));
+      
+      receivedData += temp;
+      
+      // Check if the message is complete
+      if (temp.indexOf('\n') >= 0) { // assuming '\n' is the end-of-message character
+        messageComplete = true;
+      }
+    }
+    
+    Serial.println(receivedData);
   }
 }
