@@ -6,8 +6,7 @@ const int MOSI_PIN = 7;
 const int MISO_PIN = 6;
 const int SCK_PIN = 5;
 
-RF24 radio(9, 10, SCK_
-IN, MISO_PIN, MOSI_PIN); // CE, CSN, SCK, MISO, MOSI
+RF24 radio(9, 10, SCK_IN, MISO_PIN, MOSI_PIN); // CE, CSN, SCK, MISO, MOSI
 const byte address[6] = "50015";
 
 void setup() {
