@@ -1,7 +1,3 @@
-#include <SPI.h>
-#include <nRF24L01.h>
-#include <RF24.h>
-
 const int M1=11;
 const int M2=12;
 const int Reset=2;
@@ -15,9 +11,6 @@ int terminate = 0;
 #define received() Serial.println(command)
 #define processing() Serial.println("Running...")
 
-RF24 radio(9, 10, SCK_PIN, MISO_PIN, MOSI_PIN);
-const byte address[6] = "50015";
-
 void setup() {
   digitalWrite(indicator, LOW);
   pinMode(M1, OUTPUT);
@@ -27,20 +20,15 @@ void setup() {
   Serial.begin(9600);
   delay(5000);
   digitalWrite(indicator, HIGH);
-  Serial.println("WaterOS v1.5 2024 © @matthewyang204 & @13-JA");
+  Serial.println("WaterOS v1.6 2024 © @matthewyang204 & @13-JA");
   Serial.println("WaterOS Shell Starting...");
   shell();
-
-  // NRF24L01 setup
-  radio.begin();
-  radio.openReadingPipe(1, address);
-  radio.setPALevel(RF24_PA_HIGH);
 }
 
 void loop() {
-  if (radio.available()) {
+  if (Serial.available()) {
     String command = "";
-    radio.read(&command, sizeof(command));
+    Serial.read(&command, sizeof(command));
     received();
     processing();
 
