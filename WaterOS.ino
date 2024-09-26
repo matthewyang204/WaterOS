@@ -34,19 +34,19 @@ void loop() {
     processing();
 
     // Run the command:
-    if (command.equals("forward")) {
+    if (command.equals("forward") || command.equals("w")) {
       digitalWrite(M1, HIGH);
       digitalWrite(M2, HIGH);
       Serial.println("Both motors started; boat is moving forward");
-    } else if (command.equals("right")) {
+    } else if (command.equals("right") || command.equals("d")) {
       digitalWrite(M1, HIGH);
       digitalWrite(M2, LOW);
       Serial.println("Left motor started, right motor stopped; boat is moving right");
-    } else if (command.equals("left")) {
+    } else if (command.equals("left") || command.equals("a")) {
       digitalWrite(M1, LOW);
       digitalWrite(M2, HIGH);
       Serial.println("Left motor stopped, right motor started; boat is moving left");
-    } else if (command.equals("stop")) {
+    } else if (command.equals("stop") || command.equals("s")) {
       digitalWrite(M1, LOW);
       digitalWrite(M2, LOW);
       Serial.println("Both motors stopped; boat is parked");
