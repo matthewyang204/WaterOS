@@ -1,7 +1,7 @@
 # WaterOS
 This code is the firmware for the TrashZapper water-cleaning bot. It controls the bot's movement.
 
-Latest version: Blue Valley 1.5
+Latest version: 1.5
 
 Download it here:
 https://github.com/matthewyang204/WaterOS/archive/refs/tags/1.5.zip
