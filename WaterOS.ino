@@ -1,25 +1,26 @@
-const int M1=11;
-const int M2=12;
-const int Reset=2;
-const int indicator=13;
-const int MOSI_PIN = 7;
-const int MISO_PIN = 6;
-const int SCK_PIN = 5;
+const int M1 = 11;
+const int M2 = 12;
+const int Reset = 2;
+const int indicator = 13;
+
 int command = 0;
 int terminate = 0;
+
 #define shell() Serial.print("shell>")
 #define received() Serial.println(command)
 #define processing() Serial.println("Running...")
 
 void setup() {
-  digitalWrite(indicator, LOW);
+  pinMode(indicator, OUTPUT);
   pinMode(M1, OUTPUT);
   pinMode(M2, OUTPUT);
   pinMode(Reset, OUTPUT);
+
   digitalWrite(Reset, HIGH);
   Serial.begin(9600);
   delay(5000);
   digitalWrite(indicator, HIGH);
+
   Serial.println("WaterOS v1.6 2024 © @matthewyang204 & @13-JA");
   Serial.println("WaterOS Shell Starting...");
   shell();
@@ -27,25 +28,25 @@ void setup() {
 
 void loop() {
   if (Serial.available()) {
-    String command = "";
-    Serial.read(&command, sizeof(command));
+    String command = Serial.readString();  // Read the entire incoming string
+    command.trim();                        // Clean up any extra spaces or newlines
     received();
     processing();
 
-    //Run the command:
-    if (command.equals("forward\n")){
+    // Run the command:
+    if (command.equals("forward")) {
       digitalWrite(M1, HIGH);
       digitalWrite(M2, HIGH);
       Serial.println("Both motors started; boat is moving forward");
-    } else if (command.equals("right\n")){
+    } else if (command.equals("right")) {
       digitalWrite(M1, HIGH);
       digitalWrite(M2, LOW);
       Serial.println("Left motor started, right motor stopped; boat is moving right");
-    } else if (command.equals("left\n")){
+    } else if (command.equals("left")) {
       digitalWrite(M1, LOW);
       digitalWrite(M2, HIGH);
       Serial.println("Left motor stopped, right motor started; boat is moving left");
-    } else if (command.equals("stop\n")){
+    } else if (command.equals("stop")) {
       digitalWrite(M1, LOW);
       digitalWrite(M2, LOW);
       Serial.println("Both motors stopped; boat is parked");
