@@ -48,6 +48,7 @@ To use it:
 
 3. Press the X button on your controller to send it to the bot. Holding down the D-Pad doesn't work.
 
+# Direct CLI interaction
 Here's a list of commands:
 
 - 'forward' to go forward
