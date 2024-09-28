@@ -15,7 +15,7 @@ Water Cleanup Bot Build #1 or later,
 Arduino IDE 2.0 or later,
 Windows 10 64-bit or later OR macOS 10.14 (Mojave) or later
 
-To install:
+# Installation
 
 1. Download the .zip source code and extract it.
 
@@ -23,7 +23,8 @@ To install:
 
 3. Upload it to the arduino board on the bot.
 
-To use: Interact with the bot through the Serial Monitor and use the built-in camera software on your computer (Windows Camera or Mac Photobooth) to display the video camera's output to view where it is going.
+# Usage
+Interact with the bot through the Serial Monitor and use the built-in camera software on your computer (Windows Camera or Mac Photobooth) to display the video camera's output to view where it is going.
 
 # Game Controller Support
 To install game controller support:
@@ -60,9 +61,11 @@ It's best to use the game controller. However, if you insist, here's a list of c
 
 - 'right' to go right
 
-To update:
+# Updating
 
 1. Follow the installation instrutions above to flash the new version to your bot.
+
+# Resources
 
 Dev Notes: https://docs.google.com/document/d/1UVt9WTEc06yVGV9E_fi3pdHlFEbdgE0F/edit?usp=sharing&ouid=106582150056120454876&rtpof=true&sd=true (currently in heavy editing)
 
