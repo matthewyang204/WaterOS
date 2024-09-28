@@ -1,0 +1,25 @@
+{
+  "name" : "WaterOS Control Panel",
+  "entries" : {
+    "1848:34886:1~Hat Switch 1~Right" : {
+      "type" : "key press",
+      "key" : 2
+    },
+    "1848:34886:1~Hat Switch 1~Left" : {
+      "type" : "key press",
+      "key" : 0
+    },
+    "1848:34886:1~Hat Switch 1~Up" : {
+      "type" : "key press",
+      "key" : 13
+    },
+    "1848:34886:1~Hat Switch 1~Down" : {
+      "type" : "key press",
+      "key" : 1
+    },
+    "1848:34886:1~Button 2" : {
+      "type" : "key press",
+      "key" : 36
+    }
+  }
+}
