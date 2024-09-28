@@ -1,0 +1,6 @@
+[submodule "enjoyable/src/arm64"]
+	path = enjoyable/src/arm64
+	url = https://github.com/matthewyang204/enjoyable-apple-silicon
+[submodule "enjoyable/src/x86_64"]
+	path = enjoyable/src/x86_64
+	url = https://github.com/shirosaki/enjoyable
