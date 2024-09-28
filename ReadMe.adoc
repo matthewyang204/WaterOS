@@ -67,6 +67,4 @@ It's best to use the game controller. However, if you insist, here's a list of c
 
 # Resources
 
-Dev Notes: https://docs.google.com/document/d/1UVt9WTEc06yVGV9E_fi3pdHlFEbdgE0F/edit?usp=sharing&ouid=106582150056120454876&rtpof=true&sd=true (currently in heavy editing)
-
 Copyright @matthewyang204 & @13-JA 2024
