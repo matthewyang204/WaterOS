@@ -102,8 +102,6 @@ It's best to use the game controller. However, if you insist, here's a list of c
 
 1. Follow the installation instrutions above to flash the new version to your bot.
 
-
-
 # Resources
 
 Copyright @matthewyang204 & @13-JA 2024
