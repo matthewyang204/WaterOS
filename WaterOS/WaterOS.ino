@@ -6,7 +6,7 @@ const int indicator = 13;
 int command = 0;
 int terminate = 0;
 
-#define shell() Serial.print("shell>")
+#define shell() Serial.print("WSH C:\>")
 #define received() Serial.println(command)
 #define processing() Serial.println("Running...")
 
@@ -50,8 +50,26 @@ void loop() {
       digitalWrite(M1, LOW);
       digitalWrite(M2, LOW);
       Serial.println("Both motors stopped; boat is parked");
+    } else if (command.equals("dir") || command.equals("ls")){
+      Serial.println("This operating system does not have a filesystem");
+    } else if (command.equals("help")){
+      Serial.println("Available commands:");
+      Serial.println("  forward, w - Move forward");
+      Serial.println("  right, d - Turn right");
+      Serial.println("  left, a - Turn left");
+      Serial.println("  stop, s - Stop motors");
+    } else if (command.equals("status")) {
+      Serial.print("Left motor: ");
+      Serial.println(digitalRead(M1) == HIGH ? "On" : "Off");
+      Serial.print("Right motor: ");
+      Serial.println(digitalRead(M2) == HIGH ? "On" : "Off");
     } else {
       Serial.println("Invalid command");
+      Serial.println("Available commands:");
+      Serial.println("  forward, w - Move forward");
+      Serial.println("  right, d - Turn right");
+      Serial.println("  left, a - Turn left");
+      Serial.println("  stop, s - Stop motors");
     }
     shell();
   }
