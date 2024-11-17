@@ -21,7 +21,7 @@ void setup() {
   delay(5000);
   digitalWrite(indicator, HIGH);
 
-  Serial.println("WaterOS v1.6 2024 © @matthewyang204 & @13-JA");
+  Serial.println("WaterOS v1.7 2024 © @matthewyang204 & @13-JA");
   Serial.println("WaterOS Shell Starting...");
   shell();
 }
