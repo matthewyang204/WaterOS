@@ -1,7 +1,7 @@
 # WaterCleanUp Bot (WaterOS)
 This code is the firmware for the TrashZapper water-cleaning bot. It controls the bot's movement.
 
-Latest version: 1.5
+Latest version: 1.7
 
 Download it with this command (make sure you have the CLI GIT installed):
 ```
@@ -15,6 +15,9 @@ Water Cleanup Bot Build #1 or later,
 Arduino IDE 2.0 or later,
 Windows 10 64-bit or later OR macOS 10.14 (Mojave) or later
 
+macOS
+-----
+
 # Installation
 
 1. Download the .zip source code and extract it.
@@ -24,7 +27,7 @@ Windows 10 64-bit or later OR macOS 10.14 (Mojave) or later
 3. Upload it to the arduino board on the bot.
 
 # Usage
-Interact with the bot through the Serial Monitor and use the built-in camera software on your computer (Windows Camera or Mac Photobooth) to display the video camera's output to view where it is going.
+Interact with the bot through the Serial Monitor and use the Photo Booth to display the video camera's output to view where it is going.
 
 # Game Controller Support
 To install game controller support:
@@ -49,6 +52,40 @@ To use it:
 
 3. Press the X button on your controller to send it to the bot. Holding down the D-Pad doesn't work.
 
+Windows
+-------
+
+# Installation to bot
+
+1. Download the .zip source code and extract it
+
+2. Open the .ino file in WaterOS\ in Arduino IDE and upload it to your Arduino
+
+# Usage
+Interact with the bot through the Serial Monitor and use the Windows Camera to display the video camera's output to view where it is going.
+
+# Game Controller Support
+To install game controller support:
+
+1. Download AntiMicro from the Microsoft Store
+
+2. Import the mapping in AntiMicro\map\WaterOS.joystick.amgp to the controller of your choice
+
+To use it:
+
+1. Set up the Serial Monitor and the Windows Camera as usual
+
+2. Open up AntiMicro
+
+3. Minimize AntiMicro to the system tray
+
+4. Use the D-Pad as if you were doing WASD. Note that the 'down' button sends the stop command, as this bot cannot move backward.
+
+5. Press X to send the keystroke to the bot.
+
+In general
+----------
+
 # Direct CLI interaction
 
 It's best to use the game controller. However, if you insist, here's a list of commands:
@@ -64,6 +101,8 @@ It's best to use the game controller. However, if you insist, here's a list of c
 # Updating
 
 1. Follow the installation instrutions above to flash the new version to your bot.
+
+
 
 # Resources
 
