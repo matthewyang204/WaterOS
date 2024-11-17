@@ -4,3 +4,6 @@
 [submodule "enjoyable/src/x86_64"]
 	path = enjoyable/src/x86_64
 	url = https://github.com/shirosaki/enjoyable
+[submodule "AntiMicro/src/antimicro"]
+	path = AntiMicro/src/antimicro
+	url = https://github.com/AntiMicro/antimicro.git
