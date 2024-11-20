@@ -17,7 +17,7 @@ void setup() {
   pinMode(Reset, OUTPUT);
 
   digitalWrite(Reset, HIGH);
-  Serial.begin(9600);
+  Serial.begin(2000000);
   delay(5000);
   digitalWrite(indicator, HIGH);
 
