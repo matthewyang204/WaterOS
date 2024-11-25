@@ -1,7 +1,7 @@
 # WaterCleanUp Bot (WaterOS)
 This code is the firmware for the TrashZapper water-cleaning bot. It controls the bot's movement.
 
-Latest version: 1.7
+Latest version: 1.8
 
 Download it with this command (make sure you have the CLI GIT installed):
 ```
