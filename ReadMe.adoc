@@ -83,6 +83,8 @@ To use it:
 
 5. Press X to send the keystroke to the bot.
 
+Note: You can also use [AntiMicroX](https://github.com/AntiMicroX/antimicrox), which is backwards-compatible with the original AntiMicro. I originally designed this for AntiMicro, but because the new AntiMicroX is a continuation/fork of the original, it should also work.
+
 In general
 ----------
 
