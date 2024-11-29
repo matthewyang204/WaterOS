@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD 3.00.04 develop
+<!--This file was written by TinyCAD 3.00.04 Production Release
 If you wish to view this file go to https://www.tinycad.net to
 download the executable.-->
 <TinyCADSheets>
@@ -11,12 +11,12 @@ download the executable.-->
 			<GUIDES horiz='7' vert='5'/>
 			<TITLE>TrashZapper</TITLE>
 			<AUTHOR>Matthew Yang</AUTHOR>
-			<REVISION>1.4</REVISION>
+			<REVISION>1.6</REVISION>
 			<DOCNUMBER>1</DOCNUMBER>
 			<ORGANISATION>WaterOS Team</ORGANISATION>
 			<SHEETS>1 of 1</SHEETS>
 			<SHOWS>1</SHOWS>
-			<DATE>6/23/2024</DATE>
+			<DATE>11/28/2024</DATE>
 			<GRID spacing='100.00000' snap='1'/>
 		</DETAILS>
 		<FONT id='1'>
@@ -30,6 +30,16 @@ download the executable.-->
 			<FACENAME>Arial</FACENAME>
 		</FONT>
 		<FONT id='3'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='4'>
 			<HEIGHT>-13</HEIGHT>
 			<WIDTH>6</WIDTH>
 			<WEIGHT>400</WEIGHT>
@@ -60,16 +70,6 @@ download the executable.-->
 			<FACENAME>Arial</FACENAME>
 		</FONT>
 		<FONT id='7'>
-			<HEIGHT>-13</HEIGHT>
-			<WIDTH>6</WIDTH>
-			<WEIGHT>400</WEIGHT>
-			<ITALIC>0</ITALIC>
-			<UNDERLINE>0</UNDERLINE>
-			<STRIKEOUT>0</STRIKEOUT>
-			<CHARSET>0</CHARSET>
-			<FACENAME>Arial</FACENAME>
-		</FONT>
-		<FONT id='8'>
 			<HEIGHT>-16</HEIGHT>
 			<WIDTH>7</WIDTH>
 			<WEIGHT>400</WEIGHT>
@@ -79,7 +79,7 @@ download the executable.-->
 			<CHARSET>0</CHARSET>
 			<FACENAME>Arial</FACENAME>
 		</FONT>
-		<FONT id='9'>
+		<FONT id='8'>
 			<HEIGHT>-13</HEIGHT>
 			<WIDTH>6</WIDTH>
 			<WEIGHT>400</WEIGHT>
@@ -180,7 +180,7 @@ download the executable.-->
 					<POINT pos='9.00000,0.00000' arc='0'/>
 				</POLYGON>
 				<RECTANGLE a='55.00000,119.00000' b='65.00000,125.00000' style='6' fill='1'/>
-				<TEXT pos='79.00000,108.00000' direction='3' font='8' color='FFFFFF'>Arduino Mega</TEXT>
+				<TEXT pos='79.00000,108.00000' direction='3' font='7' color='FFFFFF'>Arduino Mega</TEXT>
 				<PIN pos='67.00000,81.00000' which='0' elec='4' direction='1' part='0' number='75' show='1' length='30' number_pos='0' centre_name='0'>AREF</PIN>
 				<PIN pos='69.00000,81.00000' which='0' elec='4' direction='1' part='0' number='76' show='1' length='30' number_pos='0' centre_name='0'>GND</PIN>
 				<PIN pos='95.00000,81.00000' which='0' elec='5' direction='1' part='0' number='72' show='1' length='30' number_pos='0' centre_name='0'>PWM2</PIN>
@@ -260,11 +260,11 @@ download the executable.-->
 				<PIN pos='74.00000,133.00000' which='0' elec='4' direction='0' part='0' number='3' show='1' length='30' number_pos='3' centre_name='0'>5V</PIN>
 				<PIN pos='76.00000,133.00000' which='0' elec='4' direction='0' part='0' number='4' show='1' length='30' number_pos='4' centre_name='0'>GND</PIN>
 				<PIN pos='80.00000,133.00000' which='0' elec='4' direction='0' part='0' number='6' show='1' length='30' number_pos='6' centre_name='0'>VIN</PIN>
-				<TEXT pos='80.00000,99.00000' direction='3' font='9' color='FFFFFF'>PWM</TEXT>
-				<TEXT pos='107.00000,99.00000' direction='3' font='9' color='FFFFFF'>COMM</TEXT>
-				<TEXT pos='118.00000,112.00000' direction='0' font='9' color='FFFFFF'>DIGITAL</TEXT>
-				<TEXT pos='91.00000,118.00000' direction='3' font='9' color='FFFFFF'>ANALOG IN</TEXT>
-				<TEXT pos='70.00000,118.00000' direction='3' font='9' color='FFFFFF'>POWER</TEXT>
+				<TEXT pos='80.00000,99.00000' direction='3' font='8' color='FFFFFF'>PWM</TEXT>
+				<TEXT pos='107.00000,99.00000' direction='3' font='8' color='FFFFFF'>COMM</TEXT>
+				<TEXT pos='118.00000,112.00000' direction='0' font='8' color='FFFFFF'>DIGITAL</TEXT>
+				<TEXT pos='91.00000,118.00000' direction='3' font='8' color='FFFFFF'>ANALOG IN</TEXT>
+				<TEXT pos='70.00000,118.00000' direction='3' font='8' color='FFFFFF'>POWER</TEXT>
 				<PIN pos='78.00000,133.00000' which='0' elec='4' direction='0' part='0' number='5' show='1' length='30' number_pos='5' centre_name='0'>GND</PIN>
 				<PIN pos='134.00000,121.00000' which='0' elec='5' direction='2' part='0' number='24' show='1' length='30' number_pos='24' centre_name='0'>D52       </PIN>
 				<PIN pos='134.00000,120.00000' which='0' elec='5' direction='2' part='0' number='43' show='1' length='30' number_pos='0' centre_name='0'>D51</PIN>
@@ -397,7 +397,7 @@ download the executable.-->
 				<PIN pos='32.00000,23.00000' which='0' elec='4' direction='2' part='0' number='1' show='0' length='15' number_pos='0' centre_name='0'></PIN>
 				<PIN pos='19.00000,23.00000' which='0' elec='4' direction='3' part='0' number='2' show='0' length='15' number_pos='0' centre_name='0'></PIN>
 				<ELLIPSE a='22.40000,26.00000' b='28.40000,20.00000' style='6' fill='4'/>
-				<TEXT pos='24.20000,24.60000' direction='3' font='7' color='000000'>M</TEXT>
+				<TEXT pos='24.20000,24.60000' direction='3' font='6' color='000000'>M</TEXT>
 			</TinyCAD>
 		</SYMBOLDEF>
 		<SYMBOLDEF id='3'>
@@ -735,8 +735,8 @@ download the executable.-->
 			<FIELD type='0' description='Ref' value='B?' show='1' pos='1.00000,-5.60000'/>
 			<FIELD type='0' description='Name' value='BATTERY_2' show='1' pos='1.00000,-8.00000'/>
 		</SYMBOL>
-		<LABEL pos='80.00000,138.00000' direction='3' font='6' color='208000' style='0'>12v</LABEL>
-		<LABEL pos='120.00000,140.00000' direction='3' font='6' color='208000' style='0'>12v</LABEL>
+		<LABEL pos='80.00000,138.00000' direction='3' font='5' color='208000' style='0'>12v</LABEL>
+		<LABEL pos='120.00000,140.00000' direction='3' font='5' color='208000' style='0'>12v</LABEL>
 		<WIRE a='146.00000,132.00000' b='146.00000,140.00000'/>
 		<WIRE a='58.00000,144.00000' b='58.00000,160.00000'/>
 		<WIRE a='58.00000,160.00000' b='230.00000,160.00000'/>
@@ -837,10 +837,35 @@ download the executable.-->
 		<WIRE a='127.00000,132.00000' b='146.00000,132.00000'/>
 		<WIRE a='118.00000,132.00000' b='98.00000,132.00000'/>
 		<WIRE a='98.00000,132.00000' b='98.00000,137.00000'/>
-		<WIRE a='180.00000,18.00000' b='226.00000,18.00000'/>
+		<WIRE a='212.00000,18.00000' b='226.00000,18.00000'/>
 		<WIRE a='226.00000,18.00000' b='226.00000,36.00000'/>
 		<WIRE a='226.00000,36.00000' b='180.00000,36.00000'/>
 		<WIRE a='180.00000,36.00000' b='180.00000,18.00000'/>
 		<LABEL pos='194.00000,28.00000' direction='3' font='3' color='208000' style='0'>LoRa Module</LABEL>
+		<LABEL pos='190.00000,22.00000' direction='3' font='4' color='208000' style='0'>TX0 RX0 GND VCC</LABEL>
+		<WIRE a='96.00000,44.00000' b='96.00000,12.00000'/>
+		<WIRE a='96.00000,12.00000' b='192.00000,12.00000'/>
+		<WIRE a='192.00000,12.00000' b='192.00000,18.00000'/>
+		<JUNCTION pos='192.00000,18.00000'/>
+		<WIRE a='180.00000,18.00000' b='192.00000,18.00000'/>
+		<WIRE a='94.00000,44.00000' b='94.00000,10.00000'/>
+		<WIRE a='94.00000,10.00000' b='198.00000,10.00000'/>
+		<WIRE a='198.00000,10.00000' b='198.00000,18.00000'/>
+		<JUNCTION pos='198.00000,18.00000'/>
+		<WIRE a='192.00000,18.00000' b='198.00000,18.00000'/>
+		<JUNCTION pos='204.00000,18.00000'/>
+		<WIRE a='204.00000,18.00000' b='204.00000,4.00000'/>
+		<WIRE a='198.00000,18.00000' b='204.00000,18.00000'/>
+		<WIRE a='204.00000,4.00000' b='170.00000,4.00000'/>
+		<WIRE a='170.00000,4.00000' b='170.00000,108.00000'/>
+		<WIRE a='170.00000,108.00000' b='73.00000,108.00000'/>
+		<WIRE a='73.00000,108.00000' b='73.00000,96.00000'/>
+		<JUNCTION pos='212.00000,18.00000'/>
+		<WIRE a='212.00000,18.00000' b='212.00000,2.00000'/>
+		<WIRE a='204.00000,18.00000' b='212.00000,18.00000'/>
+		<WIRE a='212.00000,2.00000' b='154.00000,2.00000'/>
+		<WIRE a='154.00000,2.00000' b='154.00000,102.00000'/>
+		<WIRE a='154.00000,102.00000' b='71.00000,102.00000'/>
+		<WIRE a='71.00000,102.00000' b='71.00000,96.00000'/>
 	</TinyCAD>
 </TinyCADSheets>
